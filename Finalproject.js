@@ -39,3 +39,30 @@ function show(shown, hidden, hidden2) {
   document.getElementById(hidden2).style.display='none';
   return false;
 }
+
+function changeJar(){
+
+  
+    if($('#options').val() == "SchoolWork"){
+      alert(schoolWork);
+      //$('#picHolder').attr('src', 'cow.jpeg');
+    }
+    else if($('#options').val() == "Gym"){
+      alert(Gym);
+      //$('#picHolder').attr('src', 'pig.jpg');
+    }
+    else if($('#options').val() == "x"){
+      alert(x);
+     // $('#picHolder').attr('src', 'lamb.jpg');
+    }
+    else{
+      alert(y);
+      //$('#picHolder').attr('src', 'pony.jpg');
+    }
+    
+    
+  // Our Job is going to be adding the photos to this mobile app
+  
+}
+
+changePicture();
