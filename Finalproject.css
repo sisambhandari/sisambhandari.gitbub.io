@@ -1,11 +1,106 @@
+
+
+
+#container{
+    margin: 0 auto;
+    width: 1060px;
+    min-height: 100%;
+    background-color: transparent;
+    border: 0;
+}
+
+#smallHeader{
+	font: 100 25px/1.5 'Pacifico', Helvetica, sans-serif;
+ 	color: #2b2b2b;
+    text-align: center;
+    margin-bottom: 15px;
+   
+}
+ 
+#yourJars{
+    font: 100 25px/1.5 'Pacifico', Helvetica, sans-serif;
+    color: #2b2b2b;
+    position:absolute;
+    top:385px;
+    right:90px;
+}
+
+.task-list{
+    width: 250px;
+    float: left;
+    margin: 0 5px;
+    background-color: transparent;
+    min-height: 240px;
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.task-list input, .task-list textarea{
+    width: 240px;
+    margin: 1px 5px;
+}
+
+.task-list input{
+    height: 30px;
+}
+
+.todo-task{
+    border-radius: 5px;
+    background-color: transparent;  
+    border: 3px dotted #2b2b2b;
+    width: 230px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.task-list input[type="button"]{
+    width: 230px;
+    margin: 5px;
+
+}
+
+.todo-task > .task-header{
+    font-weight: bold;
+}
+
+.todo-task > .task-date{
+    font-size: 100 25px/1.5 'Pacifico', Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.todo-task > .task-description{
+    font-size: smaller;
+}
+
+h3{
+    text-align: center;
+}
+
+#delete-div{
+    display: none;
+    background-color: transparent;
+    border: 3px dotted #2b2b2b;
+    margin: 10px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
+/*----------------------------Start of Jars CSS */
 body{
 background-color: #E9CFEC ;
 
 }
 
+#Home{
+font: 100 25px/1.5 'Pacifico', Helvetica, sans-serif;
+color: #2b2b2b;
+text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+text-align: center;
+}
+
 #header{
 font: 400 100px/1.5 'Pacifico', Helvetica, sans-serif;
- color: #2b2b2b;
+color: #2b2b2b;
 text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
 text-align: center;
 }
@@ -92,25 +187,24 @@ left:900px;
 }
 .add{
 position:absolute;
-top:40;
+top:40px;
 left:100px;
 }
 .back{
 position:absolute;
-top:40;
+top:40px;
 left:100px;
 }
 
+.Forward{
+    position:absolute;
+    top:280px;
+    right:100px;
+}
 #assignment{
 
 }
-
-#Home{
-font: 100 25px/1.5 'Pacifico', Helvetica, sans-serif;
-color: #2b2b2b;
-text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
-text-align: center;
-}
+/*Jars CSS finished*/
 
 
 
