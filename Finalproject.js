@@ -1,32 +1,14 @@
-//App with a jar that keeps track of goal
-
 function allowDrop(ev) {
     ev.preventDefault();
 }
-
-/*function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-}
-*/
-
 function bigImg(x) {
     x.style.height = "140px";
     x.style.width = "120px";
 }
-
 function normalImg(x) {
-    x.style.height = "110px";
-    x.style.width = "90px";
+    x.style.height = "120px";
+    x.style.width = "100px";
 }
-
-
-
 function increase(x) {
     x.style.height = "100px";
     x.style.width = "100px";
@@ -41,11 +23,9 @@ function showPage(shown, hidden, hidden2, hidden3) {
   document.getElementById(hidden2).style.display='none';
   document.getElementById(hidden3).style.display='none';
   return false;
-
-
-
-  /* --------------------------------------------todo stuff-------------------*/
 }
+
+
 var todo = todo || {},
     data = JSON.parse(localStorage.getItem("todoData"));
 
@@ -77,23 +57,6 @@ data = data || {};
             generateElement(params);
         });
 
-        /*generateElement({
-            id: "123",
-            code: "1",
-            Project: "asd",
-            date: "22/12/2013",
-            description: "Blah Blah"
-        });*/
-
-        /*removeElement({
-            id: "123",
-            code: "1",
-            Project: "asd",
-            date: "22/12/2013",
-            description: "Blah Blah"
-        });*/
-
-        // Adding drop function to each category of task
         $.each(codes, function (index, value) {
             $(value).droppable({
                 drop: function (event, ui) {
@@ -113,6 +76,8 @@ data = data || {};
 
                             // Updating Local Storage
                             data[id] = object;
+	
+
                             localStorage.setItem("todoData", JSON.stringify(data));
 
                             // Hiding Delete Area
@@ -274,5 +239,359 @@ data = data || {};
     todo.save = function() {
 
     }
+var jarnumber=0;
+
+//insert text underneath each with CSS coordinates -google how to use text in javascript for html
 
 
+function addHealth(){
+    jarnumber+=1;
+    if (jarnumber==1){
+    document.getElementById("jar1").style.visibility = "visible";
+	document.getElementById("titleJar1").innerHTML = 'Health';
+	
+    }
+    if (jarnumber==2){;
+    document.getElementById("jar2").style.visibility = "visible";
+	document.getElementById("titleJar2").innerHTML = 'Health';
+    }
+    if (jarnumber==3){
+    document.getElementById("jar3").style.visibility = "visible";
+	document.getElementById("titleJar3").innerHTML = 'Health';
+    }
+    if (jarnumber==4){
+    document.getElementById("jar4").style.visibility = "visible";
+	document.getElementById("titleJar4").innerHTML = 'Health';
+    }
+    if (jarnumber==5){
+    document.getElementById("jar5").style.visibility = "visible";
+	document.getElementById("titleJar5").innerHTML = 'Health';
+    }
+	 if (jarnumber==6){
+	document.getElementById("jar6").style.visibility = "visible";
+	document.getElementById("titleJar6").innerHTML = 'Health';
+    }
+     if (jarnumber==7){
+	document.getElementById("jar7").style.visibility = "visible";
+	document.getElementById("titleJar7").innerHTML = 'Health';
+    }
+	 if (jarnumber==8){
+	document.getElementById("jar8").style.visibility = "visible";
+	document.getElementById("titleJar8").innerHTML = 'Health';
+    }
+	if (jarnumber==9){
+	document.getElementById("jar9").style.visibility = "visible";
+	document.getElementById("titleJar9").innerHTML = 'Health';
+    }
+	if (jarnumber==10){
+	document.getElementById("jar10").style.visibility = "visible";
+	document.getElementById("titleJar10").innerHTML = 'Health';
+    }
+	if (jarnumber==11){
+	document.getElementById("jar11").style.visibility = "visible";
+	document.getElementById("titleJar11").innerHTML = 'Health';
+    }
+	if (jarnumber==12){
+	document.getElementById("jar12").style.visibility = "visible";
+	document.getElementById("titleJar12").innerHTML = 'Health';
+    }
+	if (jarnumber==13){
+	document.getElementById("jar13").style.visibility = "visible";
+	document.getElementById("titleJar13").innerHTML = 'Health';
+    }
+	if (jarnumber==14){
+	document.getElementById("jar14").style.visibility = "visible";
+	document.getElementById("titleJar14").innerHTML = 'Health';
+    }
+	if (jarnumber==15){
+	document.getElementById("jar15").style.visibility = "visible";
+	document.getElementById("titleJar15").innerHTML = 'Health';
+    }
+	if (jarnumber>15){
+	alert("Error-Shelves Full");
+	}
+
+	
+	
+    
+    
+}
+
+function addMisc(){
+    jarnumber+=1;
+    if (jarnumber==1){
+    document.getElementById("jar1").style.visibility = "visible";
+	document.getElementById("titleJar1").innerHTML = 'Misc';
+	
+    }
+    if (jarnumber==2){;
+    document.getElementById("jar2").style.visibility = "visible";
+	document.getElementById("titleJar2").innerHTML = 'Misc';
+    }
+    if (jarnumber==3){
+    document.getElementById("jar3").style.visibility = "visible";
+	document.getElementById("titleJar3").innerHTML = 'Misc';
+    }
+    if (jarnumber==4){
+    document.getElementById("jar4").style.visibility = "visible";
+	document.getElementById("titleJar4").innerHTML = 'Misc';
+    }
+    if (jarnumber==5){
+    document.getElementById("jar5").style.visibility = "visible";
+	document.getElementById("titleJar5").innerHTML = 'Misc';
+    }
+	 if (jarnumber==6){
+	document.getElementById("jar6").style.visibility = "visible";
+	document.getElementById("titleJar6").innerHTML = 'Misc';
+    }
+     if (jarnumber==7){
+	document.getElementById("jar7").style.visibility = "visible";
+	document.getElementById("titleJar7").innerHTML = 'Misc';
+    }
+	 if (jarnumber==8){
+	document.getElementById("jar8").style.visibility = "visible";
+	document.getElementById("titleJar8").innerHTML = 'Misc';
+    }
+	if (jarnumber==9){
+	document.getElementById("jar9").style.visibility = "visible";
+	document.getElementById("titleJar9").innerHTML = 'Misc';
+    }
+	if (jarnumber==10){
+	document.getElementById("jar10").style.visibility = "visible";
+	document.getElementById("titleJar10").innerHTML = 'Misc';
+    }
+	if (jarnumber==11){
+	document.getElementById("jar11").style.visibility = "visible";
+	document.getElementById("titleJar11").innerHTML = 'Misc';
+    }
+	if (jarnumber==12){
+	document.getElementById("jar12").style.visibility = "visible";
+	document.getElementById("titleJar12").innerHTML = 'Misc';
+    }
+	if (jarnumber==13){
+	document.getElementById("jar13").style.visibility = "visible";
+	document.getElementById("titleJar13").innerHTML = 'Misc';
+    }
+	if (jarnumber==14){
+	document.getElementById("jar14").style.visibility = "visible";
+	document.getElementById("titleJar14").innerHTML = 'Misc';
+    }
+	if (jarnumber==15){
+	document.getElementById("jar15").style.visibility = "visible";
+	document.getElementById("titleJar15").innerHTML = 'Misc';
+    }
+	if (jarnumber>15){
+	alert("Error-Shelves Full");
+	}
+
+	
+	
+    
+    
+}
+function addHome(){
+       jarnumber+=1;
+    if (jarnumber==1){
+    document.getElementById("jar1").style.visibility = "visible";
+	document.getElementById("titleJar1").innerHTML = 'Home';
+	
+    }
+    if (jarnumber==2){;
+    document.getElementById("jar2").style.visibility = "visible";
+	document.getElementById("titleJar2").innerHTML = 'Home';
+    }
+    if (jarnumber==3){
+    document.getElementById("jar3").style.visibility = "visible";
+	document.getElementById("titleJar3").innerHTML = 'Home';
+    }
+    if (jarnumber==4){
+    document.getElementById("jar4").style.visibility = "visible";
+	document.getElementById("titleJar4").innerHTML = 'Home';
+    }
+    if (jarnumber==5){
+    document.getElementById("jar5").style.visibility = "visible";
+	document.getElementById("titleJar5").innerHTML = 'Home';
+    }
+	 if (jarnumber==6){
+	document.getElementById("jar6").style.visibility = "visible";
+	document.getElementById("titleJar6").innerHTML = 'Home';
+    }
+     if (jarnumber==7){
+	document.getElementById("jar7").style.visibility = "visible";
+	document.getElementById("titleJar7").innerHTML = 'Home';
+    }
+	 if (jarnumber==8){
+	document.getElementById("jar8").style.visibility = "visible";
+	document.getElementById("titleJar8").innerHTML = 'Home';
+    }
+	if (jarnumber==9){
+	document.getElementById("jar9").style.visibility = "visible";
+	document.getElementById("titleJar9").innerHTML = 'Home';
+    }
+	if (jarnumber==10){
+	document.getElementById("jar10").style.visibility = "visible";
+	document.getElementById("titleJar10").innerHTML = 'Home';
+    }
+	if (jarnumber==11){
+	document.getElementById("jar11").style.visibility = "visible";
+	document.getElementById("titleJar11").innerHTML = 'Home';
+    }
+	if (jarnumber==12){
+	document.getElementById("jar12").style.visibility = "visible";
+	document.getElementById("titleJar12").innerHTML = 'Home';
+    }
+	if (jarnumber==13){
+	document.getElementById("jar13").style.visibility = "visible";
+	document.getElementById("titleJar13").innerHTML = 'Home';
+    }
+	if (jarnumber==14){
+	document.getElementById("jar14").style.visibility = "visible";
+	document.getElementById("titleJar14").innerHTML = 'Home';
+    }
+	if (jarnumber==15){
+	document.getElementById("jar15").style.visibility = "visible";
+	document.getElementById("titleJar15").innerHTML = 'Home';
+    }
+	if (jarnumber>15){
+	alert("Error-Shelves Full");
+	}
+    
+}
+function addSchool(){
+    jarnumber+=1;
+    if (jarnumber==1){
+    document.getElementById("jar1").style.visibility = "visible";
+	document.getElementById("titleJar1").innerHTML = 'School';
+	
+    }
+    if (jarnumber==2){;
+    document.getElementById("jar2").style.visibility = "visible";
+	document.getElementById("titleJar2").innerHTML = 'School';
+    }
+    if (jarnumber==3){
+    document.getElementById("jar3").style.visibility = "visible";
+	document.getElementById("titleJar3").innerHTML = 'School';
+    }
+    if (jarnumber==4){
+    document.getElementById("jar4").style.visibility = "visible";
+	document.getElementById("titleJar4").innerHTML = 'School';
+    }
+    if (jarnumber==5){
+    document.getElementById("jar5").style.visibility = "visible";
+	document.getElementById("titleJar5").innerHTML = 'School';
+    }
+	 if (jarnumber==6){
+	document.getElementById("jar6").style.visibility = "visible";
+	document.getElementById("titleJar6").innerHTML = 'School';
+    }
+     if (jarnumber==7){
+	document.getElementById("jar7").style.visibility = "visible";
+	document.getElementById("titleJar7").innerHTML = 'School';
+    }
+	 if (jarnumber==8){
+	document.getElementById("jar8").style.visibility = "visible";
+	document.getElementById("titleJar8").innerHTML = 'School';
+    }
+	if (jarnumber==9){
+	document.getElementById("jar9").style.visibility = "visible";
+	document.getElementById("titleJar9").innerHTML = 'School';
+    }
+	if (jarnumber==10){
+	document.getElementById("jar10").style.visibility = "visible";
+	document.getElementById("titleJar10").innerHTML = 'School';
+    }
+	if (jarnumber==11){
+	document.getElementById("jar11").style.visibility = "visible";
+	document.getElementById("titleJar11").innerHTML = 'School';
+    }
+	if (jarnumber==12){
+	document.getElementById("jar12").style.visibility = "visible";
+	document.getElementById("titleJar12").innerHTML = 'School';
+    }
+	if (jarnumber==13){
+	document.getElementById("jar13").style.visibility = "visible";
+	document.getElementById("titleJar13").innerHTML = 'School';
+    }
+	if (jarnumber==14){
+	document.getElementById("jar14").style.visibility = "visible";
+	document.getElementById("titleJar14").innerHTML = 'School';
+    }
+	if (jarnumber==15){
+	document.getElementById("jar15").style.visibility = "visible";
+	document.getElementById("titleJar15").innerHTML = 'School';
+    }
+	if (jarnumber>15){
+	alert("Error-Shelves Full");
+	}
+
+    
+}
+function addWork(){
+       jarnumber+=1;
+    if (jarnumber==1){
+    document.getElementById("jar1").style.visibility = "visible";
+	document.getElementById("titleJar1").innerHTML = 'Work';
+	
+    }
+    if (jarnumber==2){;
+    document.getElementById("jar2").style.visibility = "visible";
+	document.getElementById("titleJar2").innerHTML = 'Work';
+    }
+    if (jarnumber==3){
+    document.getElementById("jar3").style.visibility = "visible";
+	document.getElementById("titleJar3").innerHTML = 'Work';
+    }
+    if (jarnumber==4){
+    document.getElementById("jar4").style.visibility = "visible";
+	document.getElementById("titleJar4").innerHTML = 'Work';
+    }
+    if (jarnumber==5){
+    document.getElementById("jar5").style.visibility = "visible";
+	document.getElementById("titleJar5").innerHTML = 'Work';
+    }
+	 if (jarnumber==6){
+	document.getElementById("jar6").style.visibility = "visible";
+	document.getElementById("titleJar6").innerHTML = 'Work';
+    }
+     if (jarnumber==7){
+	document.getElementById("jar7").style.visibility = "visible";
+	document.getElementById("titleJar7").innerHTML = 'Work';
+    }
+	 if (jarnumber==8){
+	document.getElementById("jar8").style.visibility = "visible";
+	document.getElementById("titleJar8").innerHTML = 'Work';
+    }
+	if (jarnumber==9){
+	document.getElementById("jar9").style.visibility = "visible";
+	document.getElementById("titleJar9").innerHTML = 'Work';
+    }
+	if (jarnumber==10){
+	document.getElementById("jar10").style.visibility = "visible";
+	document.getElementById("titleJar10").innerHTML = 'Work';
+    }
+	if (jarnumber==11){
+	document.getElementById("jar11").style.visibility = "visible";
+	document.getElementById("titleJar11").innerHTML = 'Work';
+    }
+	if (jarnumber==12){
+	document.getElementById("jar12").style.visibility = "visible";
+	document.getElementById("titleJar12").innerHTML = 'Work';
+    }
+	if (jarnumber==13){
+	document.getElementById("jar13").style.visibility = "visible";
+	document.getElementById("titleJar13").innerHTML = 'Work';
+    }
+	if (jarnumber==14){
+	document.getElementById("jar14").style.visibility = "visible";
+	document.getElementById("titleJar14").innerHTML = 'Work';
+    }
+	if (jarnumber==15){
+	document.getElementById("jar15").style.visibility = "visible";
+	document.getElementById("titleJar15").innerHTML = 'Work';
+    }
+	if (jarnumber>15){
+	alert("Error-Shelves Full");
+	}
+
+    
+}
