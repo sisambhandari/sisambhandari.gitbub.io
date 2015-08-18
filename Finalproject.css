@@ -244,14 +244,15 @@ left:30px;
 
 #purpose{
 	font: 200 50px/1.5 'Pacifico', Helvetica, sans-serif;
-	color: #2b2b2b;
+	font-style: italic;
+	color: #FA8072;
 	text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
 	text-align:center;
 }
 
 #purpose-description{
-	font:'Pacifico', Helvetica, sans-serif;
-	color: #2b2b2b;
+	font: 200 50px/1.5 'Pacifico', Helvetica, sans-serif;
+	color: #ADD8E6;
 	text-align:center;
 }
 .shelf{
@@ -297,43 +298,43 @@ left:30px;
 }
 #jar3{
 	position:absolute;
-	top:170px;
-	left:640px;
-	width:100;
+	top:134px;
+	left:960px;
+	width:100px;
 	height:120px;
 }
 #titleJar3{
 	position:absolute;
-	top:270px;
-	left:645px;
+	top:240px;
+	left:965px;
 	font: 100 25px/1.5 'Pacifico', Helvetica, sans-serif;
 	color: #2b2b2b;
 }
 #jar4{
 	position:absolute;
-	top:170px;
-	left:770px;
-	width:100;
+	top:135px;
+	left:1080px;
+	width:100px;
 	height:120px;
 }
 #titleJar4{
 	position:absolute;
-	top:270px;
-	left:775px;
+	top:240px;
+	left:1090px;
 	font: 100 25px/1.5 'Pacifico', Helvetica, sans-serif;
 	color: #2b2b2b;
 }
 #jar5{
 	position:absolute;
-	top:170px;
-	left:900px;
+	top:265px;
+	left:685px;
 	width:100;
 	height:120px;
 }
 #titleJar5{
 	position:absolute;
-	top:270px;
-	left:905px;
+	top:360px;
+	left:700px;
 	font: 100 25px/1.5 'Pacifico', Helvetica, sans-serif;
 	color: #2b2b2b;
 }
@@ -500,30 +501,12 @@ left:30px;
 	top:200px;
 	left:400px;
 }
-.text{
-	position:absolute;
-	top:290px;
-	left:395px;
-	font-size:40px;
-}
-.text2{
-	position:absolute;
-	top:290px;
-	left:195px;
-	font-size:40px;
-}
-.text3{
-	position:absolute;
-	top:290px;
-	left:595px;
-	font-size:40px;
-}
 .Work{
 	position:absolute;
 	width:100px;	
 	height:100px;
 	top:200px;
-	left:600px;
+	left:700px;
 }
 
 .School{
@@ -531,7 +514,7 @@ left:30px;
 	width:100px;	
 	height:100px;
 	top:200px;
-	left:200px;
+	left:1000px;
 	
 }
 .Home{
@@ -539,25 +522,45 @@ left:30px;
 	width:100px;	
 	height:100px;
 	top:200px;
-	left:800px;
-}
-.text4{
-	position:absolute;
-	top:300px;
-	left:795px;
-	font-size:40px;
+	left:1300px;
 }
 .Misc{
 	position:absolute;
 	width:100px;	
 	height:100px;
 	top:200px;
-	left:1000px;
+	left:1600px;
 }
-.text5{
+.text{
 	position:absolute;
 	top:300px;
-	left:995px;
+	left:400px;
+	font-size:40px;
+}
+.text2{
+	position:absolute;
+	top:300px;
+	left:1000px;
+	font-size:40px;
+}
+.text3{
+	position:absolute;
+	top:300px;
+	left:700px;
+	font-size:40px;
+}
+
+.text4{
+	position:absolute;
+	top:310px;
+	left:1300px;
+	font-size:40px;
+}
+
+.text5{
+	position:absolute;
+	top:310px;
+	left:1600px;
 	font-size:40px;
 }
 
@@ -565,9 +568,9 @@ left:30px;
 	font:'Pacifico', Helvetica, sans-serif;
 	color: #2b2b2b;
 	font-size:50px;
-	position:absolute;
+	position: absolute;
 	top:500px;
-	left:150px;
+	left: 495px;
 }
 
 
