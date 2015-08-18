@@ -165,7 +165,8 @@ height:120px;
 }
 #slideshow { 
     margin: 50px auto; 
-    position: absolute; 
+    position: relative;
+    left: 30px;
     width: 240px; 
     height: 240px; 
     padding: 10px; 
