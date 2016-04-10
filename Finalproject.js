@@ -1,15 +1,13 @@
 function allowDrop(ev) {
     ev.preventDefault();
 }
-function bigImg(x,beans) {
+function bigImg(x) {
     x.style.height = "140px";
     x.style.width = "120px";
-
 }
-function normalImg(x,beans) {
+function normalImg(x) {
     x.style.height = "120px";
     x.style.width = "100px";
-
 }
 function increase(x) {
     x.style.height = "100px";
@@ -19,16 +17,11 @@ function decrease(x) {
     x.style.height = "70px";
     x.style.width = "70px";
 }
-
-
-function showPage(shown, hidden, hidden2, hidden3,hidden4,hidden5,hidden6) {
+function showPage(shown, hidden, hidden2, hidden3) {
   document.getElementById(shown).style.display='block';
   document.getElementById(hidden).style.display='none';
   document.getElementById(hidden2).style.display='none';
   document.getElementById(hidden3).style.display='none';
-  document.getElementById(hidden4).style.display='none';
-  document.getElementById(hidden5).style.display='none';
-  document.getElementById(hidden6).style.display='none';
   return false;
 }
 
@@ -247,8 +240,6 @@ data = data || {};
 
     }
 var jarnumber=0;
-var countOfJars = [];
-var storedNames;
 
 //insert text underneath each with CSS coordinates -google how to use text in javascript for html
 
@@ -258,9 +249,8 @@ function addHealth(){
     if (jarnumber==1){
     document.getElementById("jar1").style.visibility = "visible";
 	document.getElementById("titleJar1").innerHTML = 'Health';
-    }
 	
-  
+    }
     if (jarnumber==2){;
     document.getElementById("jar2").style.visibility = "visible";
 	document.getElementById("titleJar2").innerHTML = 'Health';
@@ -321,9 +311,11 @@ function addHealth(){
 	alert("Error-Shelves Full");
 	}
 
-
- 
- }
+	
+	
+    
+    
+}
 
 function addMisc(){
     jarnumber+=1;
@@ -603,92 +595,3 @@ function addWork(){
 
     
 }
-
-function showImage() {
-	var ddl = document.getElementById("mySelect");
- var selectedValue = ddl.options[ddl.selectedIndex].value;
-    if (selectedValue == "10" || selectedValue == "20" || selectedValue == "30")
-   { 
-	document.getElementById("jar1").src= "http://s8.postimg.org/u6ssqwv8l/first.png";
-	document.getElementById("Page1").style.display='block';
-  document.getElementById("Home").style.display='none';
-  document.getElementById("Page2").style.display='none';
-  document.getElementById("Page3").style.display='none';
-  document.getElementById("Page4").style.display='none';
-   }
-   if (selectedValue == "40" || selectedValue == "50" || selectedValue == "60")
-   { 
-	document.getElementById("jar1").src= "http://s21.postimg.org/4x2iuu0xz/second.png";
-	document.getElementById("Page1").style.display='block';
-  document.getElementById("Home").style.display='none';
-  document.getElementById("Page2").style.display='none';
-  document.getElementById("Page3").style.display='none';
-  document.getElementById("Page4").style.display='none';
-   }
-   if (selectedValue == "70%" || selectedValue == "80%" || selectedValue == "90%")
-   {
-	document.getElementById("jar1").src= "http://s3.postimg.org/b8ayetqfn/third.png";
-	document.getElementById("Page1").style.display='block';
-  document.getElementById("Home").style.display='none';
-  document.getElementById("Page2").style.display='none';
-  document.getElementById("Page3").style.display='none';
-  document.getElementById("Page4").style.display='none';
-   }
-    if (selectedValue == "100")
-   {
-	 document.getElementById("jar1").src= "http://s11.postimg.org/97uvq5mrn/last.png";
-	   alert("Congratulations-You Finished Your Tasks!");
-	   document.getElementById("Page1").style.display='block';
-  document.getElementById("Home").style.display='none';
-  document.getElementById("Page2").style.display='none';
-  document.getElementById("Page3").style.display='none';
-  document.getElementById("Page4").style.display='none';
-   }
-   
-}
-
-
-$("#slideshow > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slideshow > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow');
-},  3000);
-
-$("#slideshow1 > div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slideshow1 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow1');
-},  3000);
-
-setInterval(function() { 
-  $('#slideshow2 > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slideshow2');
-},  3000);
-$(document).ready(function(){
-
-  $("#mySelect").change(function(){
-  console.log ( '#change function worked' ); 
-   
-  showImage();  
-  console.log ( '#change function worked' ); 
-  });
-});
-////WHEN SAVING THE JARS TO LOCAL STORAGE YOU ALSO HAVE TO SAVE THE JAR NUMBER
-// SWITCH BETWEEN IMAGES TO FILL UP JAR
-
-
-
